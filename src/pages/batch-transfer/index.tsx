@@ -1,4 +1,5 @@
 import { AlertDialog, Box, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button } from "@chakra-ui/react";
+import { BrowserRouter, Link, NavLink, Route, Routes } from "react-router-dom";
 import { useAccount, useSigner, useContract, useNetwork } from "wagmi";
 import Confirm from "./components/Confirm";
 import Ready from "./components/Ready";
@@ -8,7 +9,7 @@ import { useRef, useState } from "react";
 import { BigNumber, ethers } from "ethers";
 import { POLYGON_TESTNET_CONTRACT_ADDRESS, ETHER_TESTNET_CONTRACT_ADDRESS, POLYGON_CONTRACT_ADDRESS, ETHER_CONTRACT_ADDRESS } from './config'
 import abi from './abi/BatchTransfer.json'
-import tokenAbi from '../../abi/ERC20.json'
+import tokenAbi from '../../assets/abi/ERC20.json'
 export interface IReceipt {
   address: string,
   amount: string
@@ -16,7 +17,7 @@ export interface IReceipt {
 
 const CONTRACT_ADDRESS = POLYGON_CONTRACT_ADDRESS
 
-export default function BatchTransfer () {
+export default function MultiTransfer () {
   const { data: signer } = useSigner()
   const { chain, chains } = useNetwork()
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -124,7 +125,7 @@ export default function BatchTransfer () {
         activeIndex === 2 && <Feedback txHash={txHash} />
       }
 
-    {/* <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>提醒</ModalHeader>
@@ -142,7 +143,7 @@ export default function BatchTransfer () {
             </Button>
           </ModalFooter>
         </ModalContent>
-      </Modal> */}
+      </Modal>
 
     </Box>
   )

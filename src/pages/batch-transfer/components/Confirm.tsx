@@ -13,7 +13,7 @@ export default function Confirm (props: IConfirmProps) {
       {
         receipts.map(receipt => {
           return (
-            <Box display='flex' mb='20px' key={receipt.address}>
+            <Box display='flex' mb='20px'>
               <Input value={receipt.address} mr='20px' isDisabled />
               <Input value={receipt.amount} isDisabled />
             </Box>
