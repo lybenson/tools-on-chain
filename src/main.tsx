@@ -29,7 +29,7 @@ const wagmiClient = createClient({
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <WagmiConfig client={wagmiClient}>
-    <RainbowKitProvider chains={chains} modalSize="compact">
+    <RainbowKitProvider chains={chains} modalSize="compact" showRecentTransactions>
       <ChakraProvider theme={theme}>
       <App />
       </ChakraProvider>
