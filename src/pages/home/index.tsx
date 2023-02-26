@@ -6,6 +6,9 @@ export default function () {
       <NavLink to='/batch-transfer'>
         <Button>批量转账</Button>
       </NavLink>
+      <NavLink to='/aggregation'>
+        <Button>代币归集</Button>
+      </NavLink>
     </Box>
   )
 }
