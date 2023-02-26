@@ -52,7 +52,7 @@ export default function MultiTransfer () {
     let receives: Array<Array<string | BigNumber>> = []
     let totalAmount: BigNumber = BigNumber.from(0)
 
-    const zeroAddress = '0x0000000000000000000000000000000000000000'
+    const zeroAddress = ethers.constants.AddressZero
     // const gasLimit = await contract.estimateGas.distribute(receives, zeroAddress)
 
     let address = zeroAddress
