@@ -1,34 +1,22 @@
 {
   "name": "tools-on-chain",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.9",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@rainbow-me/rainbowkit": "^0.8.1",
-    "ethers": "5.7.2",
-    "framer-motion": "^9.0.1",
-    "papaparse": "^5.3.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-form-stepper": "^2.0.3",
-    "react-router-dom": "^6.8.0",
-    "wagmi": "^0.9.5",
-    "zustand": "^4.3.2"
-  },
-  "devDependencies": {
-    "@types/papaparse": "^5.3.7",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react": "^3.1.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "@types/node": "18.15.1",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
   }
 }
