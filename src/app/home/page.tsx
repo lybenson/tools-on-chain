@@ -1,5 +1,3 @@
 export default function Home () {
-  return <div className="text-[40px] font-800 md:text-blue p-outer font-pixel">
-    <span>Home</span>
-  </div>
+  return <div className="font-bold font-pixel p-2 text-success text-xl8">Home</div>
 }

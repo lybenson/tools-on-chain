@@ -1,4 +1,5 @@
 const colors =  {
-  blue: 'purple'
+  success: 'green',
+  error: 'red'
 }
 export default colors
