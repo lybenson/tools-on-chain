@@ -6,6 +6,6 @@ import Link from "next/link";
 
 export default function Home() {
   return <div>
-    <Link href='/batch-transfer'>批量转账</Link>
+    <Link href='/home'>go home</Link>
   </div>
 }
