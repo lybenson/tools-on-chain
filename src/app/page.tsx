@@ -1,8 +1,6 @@
-// import { Proto } from 'next/font/google'
+'use client'
 
-import Link from "next/link";
-
-// const inter = Inter({ subsets: ['latin'] })
+import Link from 'next/link'
 
 export default function Home() {
   return <div>

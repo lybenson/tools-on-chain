@@ -17,6 +17,8 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@swc-node/register": "^1.6.2",
     "@swc/core": "^1.3.40",
     "@types/node": "18.15.3",
@@ -33,7 +35,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
+      "npx eslint --fix",
       "git add ."
     ]
   }
