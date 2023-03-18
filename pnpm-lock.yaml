@@ -7,6 +7,7 @@ specifiers:
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   autoprefixer: ^10.4.14
+  client-only: ^0.0.1
   eslint: 8.36.0
   eslint-config-next: 13.2.4
   husky: ^8.0.3
@@ -15,13 +16,16 @@ specifiers:
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
+  server-only: ^0.0.1
   tailwindcss: ^3.2.7
   typescript: 4.9.5
 
 dependencies:
+  client-only: registry.npmmirror.com/client-only/0.0.1
   next: registry.npmmirror.com/next/13.2.4_biqbaboplfbrettd7655fr4n2y
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+  server-only: registry.npmmirror.com/server-only/0.0.1
 
 devDependencies:
   '@swc-node/register': registry.npmmirror.com/@swc-node/register/1.6.2_iam32obddcem3ix5xtmuuzzkny
@@ -3250,6 +3254,12 @@ packages:
     dependencies:
       lru-cache: registry.npmmirror.com/lru-cache/6.0.0
     dev: true
+
+  registry.npmmirror.com/server-only/0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/server-only/-/server-only-0.0.1.tgz}
+    name: server-only
+    version: 0.0.1
+    dev: false
 
   registry.npmmirror.com/shebang-command/2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/shebang-command/-/shebang-command-2.0.0.tgz}

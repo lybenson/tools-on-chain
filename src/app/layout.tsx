@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/normalize.css'
+import styles from './layout.module.css'
 
 export const metadata = {
   title: '链上工具集',
@@ -13,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div>root layout</div>
+        <div className={styles.container}>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
