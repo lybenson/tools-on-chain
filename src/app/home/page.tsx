@@ -4,14 +4,14 @@ export default async function Home () {
 }
 
 const getData = async () => {
-  console.log('getData');
+  console.log('getData')
   
   await stop()
   return { count: 200 } 
 }
 
 function stop () {
-  return new Promise<void>((resolve, reject) => {
+  return new Promise<void>((resolve) => {
     setTimeout(() => {
       resolve()
     }, 2000)
