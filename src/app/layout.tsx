@@ -4,14 +4,15 @@ import styles from './layout.module.css'
 
 export const metadata = {
   title: '链上工具集',
-  description: 'tools on chain',
+  description: 'tools on chain'
 }
 
-export default function RootLayout({
-  children,
+export default function RootLayout ({
+  children
 }: {
   children: React.ReactNode
 }) {
+  // const c = 100
   return (
     <html lang="en">
       <body>

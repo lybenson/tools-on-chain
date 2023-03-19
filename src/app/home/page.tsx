@@ -6,7 +6,7 @@ export default async function Home () {
 
 const getData = async () => {
   await pause()
-  return { count: Math.random() } 
+  return { count: Math.random() }
 }
 
 function pause () {
