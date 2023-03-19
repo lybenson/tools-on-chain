@@ -1,9 +1,25 @@
 {
-  "extends": "next/core-web-vitals",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": [
+    "standard-with-typescript",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {
-    "semi": ["error", "never"],
-    "quotes": ["error", "single"],
-    "no-unused-vars": ["error", { "vars": "all" }],
-    "@next/next/no-html-link-for-pages": 0
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    "@typescript-eslint/return-await": "off"
   }
 }
